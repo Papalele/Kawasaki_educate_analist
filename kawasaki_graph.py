@@ -8,7 +8,7 @@ import plotly.graph_objects as go
 
 
 
-filename = r"C:\Users\ryohe_iyzrwas\Desktop\MyPythonProject\01Python開発\02川崎市児童生徒数等グラフ化\summary.xlsx"
+filename = r"summary.xlsx"
 df = pd.read_excel(filename)
 
 #データ成形
@@ -162,32 +162,6 @@ st.write(gyosei_list + school_list + "の" + genre + "を表示しています")
 st.write("表示されている" + str(year[1]-year[0]) + "年間において、" + str(genre) + "は" + str(finish_n - start_n) + "人" + judge() + "しました")
 #増減率
 st.write("増減率は" + str(round((finish_n-start_n)/start_n*100,2)) + "%です")
-#表示されている期間のうち、最も多かった年と数
-
-#表示されている期間のうち、最も少なかった年と数
-
-#表示されている期間の平均値
-
-#学校の連絡先・所在地
-
-#学校のURL
-
-
-#学校配置図
-#緯度・経度情報取得→なぜか表示されない・・・。いったん保留。
-# filename_public =r"C:\Users\ryohe_iyzrwas\Desktop\MyPythonProject\01Python開発\02川崎市児童生徒数等グラフ化\public_facility_school.xlsx"
-# df_public = pd.read_excel(filename_public)
-# df_public =df_public[["経度","緯度"]]
-# df_public = df_public.rename(columns={"緯度":"lon","経度":"lat"})
-
-
-# st.map(df_public,1,use_container_width=False)
-
-
-
-
-
-
 
 
 
