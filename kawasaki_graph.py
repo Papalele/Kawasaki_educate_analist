@@ -8,7 +8,7 @@ import plotly.graph_objects as go
 
 
 
-filename = r"summary.xlsx"
+filename = r".\summary.xlsx"
 df = pd.read_excel(filename)
 
 #データ成形
