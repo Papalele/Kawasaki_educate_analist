@@ -8,8 +8,8 @@ import plotly.graph_objects as go
 
 
 
-filename = r"summary.xlsx"
-df = pd.read_excel(filename)
+filename = r"./summary.csv"
+df = pd.read_csv(filename)
 #データ成形
 df["児童数"]=df["児童数"].replace("廃校",np.nan)
 df["内特別支援学級児童数"] = df["内特別支援学級児童数"].replace("-",np.nan)
